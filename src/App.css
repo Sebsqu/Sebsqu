@@ -1,6 +1,7 @@
 *{
   background-color: #181334;
   text-align: center;
+  font-family: 'Roboto Mono';
 }
 
 .App{
@@ -14,20 +15,19 @@ nav{
   display: flex;
   height: 80px;
   align-items: center;
+  justify-content: space-around;
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 10;
 }
 
 .logo{
   color: white;
   font-size: 30px;
-  flex-basis: 40%;
 }
 
 .nav{
   color: white;
-  flex-basis: 60%;
 }
 
 .nav ul{
@@ -37,6 +37,14 @@ nav{
 
 .nav ul li{
   margin: 0 20px;
+}
+
+.nav ul li a{
+  color: white;
+}
+
+.nav ul li a:link{
+  text-decoration: none;
 }
 
 /* home */
@@ -87,4 +95,11 @@ nav{
 .me span{
   color: gold;
   background: linear-gradient(transparent, transparent);
+}
+
+/* o mnie */
+
+.about{
+  height: 100vh;
+  background-color: white;
 }
