@@ -4,47 +4,32 @@
   font-family: 'Roboto Mono';
 }
 
-.App{
-  height: 200vh;
-}
-
-/* nawigacja */
-
-nav{
-  width: 100%;
+/*nawigacja*/
+.nav {
   display: flex;
-  height: 80px;
   align-items: center;
-  justify-content: space-around;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  position: relative;
+  height: 80px;
 }
 
-.logo{
+/* Logo */
+.logo {
+  position: absolute;
+  left: 20%;
   color: white;
   font-size: 30px;
 }
 
-.nav{
-  color: white;
-}
-
-.nav ul{
+/* Nawigacja */
+.nav-links {
+  margin-left: auto; /* Przesuwa nawigację do prawej strony kontenera */
+  margin-right: 10%; /* Ustawia margines 10% od prawej strony */
   display: flex;
-  list-style-type: none;
+  gap: 10px; /* Opcjonalne: dodaje przestrzeń między linkami */
 }
 
-.nav ul li{
-  margin: 0 20px;
-}
-
-.nav ul li a{
+.nav-links .nav-link {
   color: white;
-}
-
-.nav ul li a:link{
-  text-decoration: none;
 }
 
 /* home */
@@ -102,4 +87,20 @@ nav{
 .about{
   height: 100vh;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  width: 50vw;
+  height: 50vh;
+}
+
+.photo{
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: 5px solid gold;
+  margin: 50px 100px;
 }
